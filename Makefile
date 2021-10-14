@@ -3,10 +3,14 @@ install:
 	cargo install --force --path .
 
 
+
 .PHONY: clear
 clear:
 	rm -rf target
 
+.PHONY: test
+test:
+	cargo test
 
 .PHONY: build
 build:
